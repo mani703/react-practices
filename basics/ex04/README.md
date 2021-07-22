@@ -29,6 +29,7 @@
         | --- node-modules.json
         | --- public
                 | --- index.html  
+                | --- main.html  
         | ---  src
                 | --- index.js
                 | --- App.js
