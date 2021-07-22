@@ -13,8 +13,8 @@
         ├--- package-lock.json
         ├--- node-modules.json
         ├--- public
-        |       ├ --- index.html
-        |       └ --- index.js
+        |       ├--- index.html
+        |       └--- index.js
         └--- dev-server
     <pre>
 3. scripts

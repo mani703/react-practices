@@ -8,13 +8,13 @@
       ├--- package.json
       ├--- node-modules.json
       ├--- public
-      |      ├ --- index.html  
-      |      └ --- bundle.js   [build 결과]
+      |      ├--- index.html  
+      |      └--- bundle.js   [build 결과]
       ├---  src
-      |      ├ --- text-loader.js
-      |      ├ --- hello.txt
-      |      ├ --- index.js
-      |      └ --- App.js
+      |      ├--- text-loader.js
+      |      ├--- hello.txt
+      |      ├--- index.js
+      |      └--- App.js
       └--- webpack.config.js   [webpack 설정 파일]
     <pre>
 

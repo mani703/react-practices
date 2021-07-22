@@ -13,9 +13,9 @@
         ├--- package-lock.json
         ├--- node-modules.json
         ├--- public
-        |       ├ --- index.html
-        |       ├ --- index.js
-        |       └ --- App.js
+        |       ├--- index.html
+        |       ├--- index.js
+        |       └--- App.js
         └--- dev-server
     <pre>
 3. scripts

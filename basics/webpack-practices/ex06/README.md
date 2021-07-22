@@ -13,17 +13,17 @@ $ npm i -D webpack webpack-cli webpack-dev-server css-loader style-loader sass-l
       ├--- package.json
       ├--- node-modules.json
       ├--- public
-      |      ├ --- assets
-      |      |        └ --- images
-      |      |                 └ --- logo.svg  [build 결과]
-      |      ├ --- index.html  
-      |      └ --- bundle.js                   [build 결과]
+      |      ├--- assets
+      |      |        └--- images
+      |      |                 └--- logo.svg  [build 결과]
+      |      ├--- index.html  
+      |      └--- bundle.js                   [build 결과]
       ├---  src
-      |      ├ --- index.js
-      |      ├ --- App.js
-      |      ├ --- App.scss
-      |      ├ --- index.css
-      |      └ --- logo.svg
+      |      ├--- index.js
+      |      ├--- App.js
+      |      ├--- App.scss
+      |      ├--- index.css
+      |      └--- logo.svg
       └--- webpack.config.js [webpack 설정 파일]
     <pre>
 

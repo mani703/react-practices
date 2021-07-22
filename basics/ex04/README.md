@@ -28,11 +28,11 @@
         ├--- package-lock.json
         ├--- node-modules.json
         ├--- public
-        |      ├ --- index.html  
-        |      └ --- main.html  
+        |      ├--- index.html  
+        |      └--- main.html  
         ├---  src
-        |      ├ --- index.js
-        |      └ --- App.js
+        |      ├--- index.js
+        |      └--- App.js
         └--- dev-server.mjs
     <pre>
 8. scripts

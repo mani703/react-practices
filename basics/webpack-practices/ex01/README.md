@@ -14,11 +14,11 @@ $ npm i -D webpack webpack-cli express
       ├--- package-lock.json
       ├--- node-modules.json
       ├--- public
-      |      ├ --- index.html  
-      |      └ --- main.js  
+      |      ├--- index.html  
+      |      └--- main.js  
       ├---  src
-      |      ├ --- index.js
-      |      └ --- App.js
+      |      ├--- index.js
+      |      └--- App.js
       └--- dev-server.mjs
     <pre>
 
