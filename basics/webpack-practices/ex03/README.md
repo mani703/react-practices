@@ -9,16 +9,16 @@ $ npm i -D webpack webpack-cli webpack-dev-server
 2. 프로젝트 디렉토리
     <pre>
     /ex03
-      | --- package.json
-      | --- package-lock.json
-      | --- node-modules.json
-      | --- public
-              | --- index.html  
-              | --- main.js  
-      | ---  src
-              | --- index.js
-              | --- App.js
-      | --- webpack.config.js [webpack 설정 파일]
+      ├ --- package.json
+      ├ --- package-lock.json
+      ├ --- node-modules.json
+      ├ --- public
+      |       ├ --- index.html  
+      |       └ --- main.js  
+      ├ ---  src
+      |       ├ --- index.js
+      |       └ --- App.js
+      └ --- webpack.config.js [webpack 설정 파일]
     <pre>
 
 3. webpack.config.js

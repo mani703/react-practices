@@ -24,16 +24,16 @@
 7. 프로젝트 디렉토리
     <pre>
       /ex04
-        | --- package.json
-        | --- package-lock.json
-        | --- node-modules.json
-        | --- public
-                | --- index.html  
-                | --- main.html  
-        | ---  src
-                | --- index.js
-                | --- App.js
-        | --- dev-server.mjs
+        ├ --- package.json
+        ├ --- package-lock.json
+        ├ --- node-modules.json
+        ├ --- public
+        |       ├ --- index.html  
+        |       └ --- main.html  
+        ├ ---  src
+        |       ├ --- index.js
+        |       └ --- App.js
+        └ --- dev-server.mjs
     <pre>
 8. scripts
 ```json

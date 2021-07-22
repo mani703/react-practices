@@ -10,16 +10,16 @@ $ npm i -D webpack webpack-cli express
 2. 프로젝트 디렉토리
     <pre>
     /ex02
-      | --- package.json
-      | --- package-lock.json
-      | --- node-modules.json
-      | --- public
-              | --- index.html  
-              | --- main.js  
+      ├ --- package.json
+      ├ --- package-lock.json
+      ├ --- node-modules.json
+      ├ --- public
+      |       ├ --- index.html  
+      |       └ --- main.js  
       | ---  src
-              | --- index.js
-              | --- App.js
-      | --- dev-server.mjs
+      |       ├ --- index.js
+      |       └ --- App.js
+      └ --- dev-server.mjs
     <pre>
 
 3. 빌드하기

@@ -1,28 +1,21 @@
-## webpack-practice: ex05
-1. 프로젝트 생성
-```bash
-$ mkdir ex05
-$ cd ex05
-$ npm init -y
-$ npm i -D webpack webpack-cli webpack-dev-server css-loader style-loader sass-loader node-sass
-```
+## webpack-practice: ex07
+1. 간단한 webpack loader 작성하고 설정해보기(src/text-loader.js)
+
 2. 프로젝트 디렉토리
     <pre>
-    /ex05
+    /ex07
       ├ --- package-lock.json
       ├ --- package.json
       ├ --- node-modules.json
       ├ --- public
       |       ├ --- index.html  
-      |       └ --- bundle.js  
+      |       └ --- bundle.js   [build 결과]
       ├ ---  src
-      |       ├ --- assets
-      |       |        └ --- scss
-      |       |                ├ --- _variables.scss
-      |       |                └ --- App.scss
+      |       ├ --- text-loader.js
+      |       ├ --- hello.txt
       |       ├ --- index.js
       |       └ --- App.js
-      └ --- webpack.config.js [webpack 설정 파일]
+      └ --- webpack.config.js   [webpack 설정 파일]
     <pre>
 
 3. webpack.config.js
@@ -37,15 +30,8 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /\.css$/i,
-            use:['style-loader', 'css-loader']
-        }, {
-            test: /\.s[ac]ss/i,
-            use: [
-                'style-loader',
-                'css-loader',
-                'sass-loader'
-            ]
+            test: /\.txt$/i,
+            loader: path.resolve('src/text-loader.js')
         }]
     },
     devServer: {
@@ -61,7 +47,7 @@ module.exports = {
 }
 ```
 
-4. 빌드하기
+4. 빌드하기(image 복사를 위해서 먼저 꼭 해야함)
 ```bash
 $ npx webpack 
 ```
