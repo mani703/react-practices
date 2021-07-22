@@ -4,18 +4,18 @@
 2. 프로젝트 디렉토리
     <pre>
     /ex07
-      ├ --- package-lock.json
-      ├ --- package.json
-      ├ --- node-modules.json
-      ├ --- public
-      |       ├ --- index.html  
-      |       └ --- bundle.js   [build 결과]
-      ├ ---  src
-      |       ├ --- text-loader.js
-      |       ├ --- hello.txt
-      |       ├ --- index.js
-      |       └ --- App.js
-      └ --- webpack.config.js   [webpack 설정 파일]
+      ├--- package-lock.json
+      ├--- package.json
+      ├--- node-modules.json
+      ├--- public
+      |      ├ --- index.html  
+      |      └ --- bundle.js   [build 결과]
+      ├---  src
+      |      ├ --- text-loader.js
+      |      ├ --- hello.txt
+      |      ├ --- index.js
+      |      └ --- App.js
+      └--- webpack.config.js   [webpack 설정 파일]
     <pre>
 
 3. webpack.config.js

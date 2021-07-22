@@ -9,17 +9,17 @@ $ npm i -D webpack webpack-cli express
 2. 프로젝트 디렉토리
     <pre>
     /ex02
-      ├ --- package.json
-      ├ --- package-lock.json
-      ├ --- node-modules.json
-      ├ --- public
-      |       ├ --- index.html  
-      |       └ --- main.js  
-      ├ ---  src
-      |       ├ --- index.js
-      |       └ --- App.js
-      ├ --- dev-server.mjs
-      └ --- webpack.config.js [webpack 설정 파일]
+      ├--- package.json
+      ├--- package-lock.json
+      ├--- node-modules.json
+      ├--- public
+      |      ├ --- index.html  
+      |      └ --- main.js  
+      ├---  src
+      |      ├ --- index.js
+      |      └ --- App.js
+      ├--- dev-server.mjs
+      └--- webpack.config.js [webpack 설정 파일]
     <pre>
 
 3. webpack.config.js

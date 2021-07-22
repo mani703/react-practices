@@ -9,22 +9,22 @@ $ npm i -D webpack webpack-cli webpack-dev-server css-loader style-loader sass-l
 2. 프로젝트 디렉토리
     <pre>
     /ex06
-      ├ --- package-lock.json
-      ├ --- package.json
-      ├ --- node-modules.json
-      ├ --- public
-      |       ├ --- assets
-      |       |        └ --- images
-      |       |                 └ --- logo.svg  [build 결과]
-      |       ├ --- index.html  
-      |       └ --- bundle.js                   [build 결과]
-      ├ ---  src
-      |       ├ --- index.js
-      |       ├ --- App.js
-      |       ├ --- App.scss
-      |       ├ --- index.css
-      |       └ --- logo.svg
-      └ --- webpack.config.js [webpack 설정 파일]
+      ├--- package-lock.json
+      ├--- package.json
+      ├--- node-modules.json
+      ├--- public
+      |      ├ --- assets
+      |      |        └ --- images
+      |      |                 └ --- logo.svg  [build 결과]
+      |      ├ --- index.html  
+      |      └ --- bundle.js                   [build 결과]
+      ├---  src
+      |      ├ --- index.js
+      |      ├ --- App.js
+      |      ├ --- App.scss
+      |      ├ --- index.css
+      |      └ --- logo.svg
+      └--- webpack.config.js [webpack 설정 파일]
     <pre>
 
 3. webpack.config.js

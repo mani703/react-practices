@@ -9,19 +9,19 @@ $ npm i -D webpack webpack-cli webpack-dev-server css-loader style-loader
 2. 프로젝트 디렉토리
     <pre>
     /ex04
-      ├ --- package-lock.json
-      ├ --- package.json
-      ├ --- node-modules.json
-      ├ --- public
-      |       ├ --- index.html  
-      |       └ --- bundle.js  
-      ├ ---  src
-      |       | --- assets
-      |       |        ├ --- Common.css
-      |       |        └ --- App.css
-      |       ├ --- index.js
-      |       └ --- App.js
-      └ --- webpack.config.js [webpack 설정 파일]
+      ├--- package-lock.json
+      ├--- package.json
+      ├--- node-modules.json
+      ├--- public
+      |      ├ --- index.html  
+      |      └ --- bundle.js  
+      ├---  src
+      |      | --- assets
+      |      |        ├ --- Common.css
+      |      |        └ --- App.css
+      |      ├ --- index.js
+      |      └ --- App.js
+      └--- webpack.config.js [webpack 설정 파일]
     <pre>
 
 3. webpack.config.js

@@ -9,14 +9,14 @@
 2. 프로젝트 디렉토리
     <pre>
       /ex03
-        ├ --- package.json
-        ├ --- package-lock.json
-        ├ --- node-modules.json
-        ├ --- public
-        |        ├ --- index.html
-        |        ├ --- index.js
-        |        └ --- App.js
-        └ --- dev-server
+        ├--- package.json
+        ├--- package-lock.json
+        ├--- node-modules.json
+        ├--- public
+        |       ├ --- index.html
+        |       ├ --- index.js
+        |       └ --- App.js
+        └--- dev-server
     <pre>
 3. scripts
 ```json

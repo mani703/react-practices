@@ -10,16 +10,16 @@
 2. 프로젝트 디렉토리
     <pre>
       /ex05
-        ├ --- package.json
-        ├ --- package-lock.json
-        ├ --- node-modules.json
-        ├ --- public
-        |       ├ --- index.html  
-        |       └ --- bundle.html  [빌드 결과]
-        ├ ---  src
-        |       ├ --- index.js
-        |       └ --- App.js
-        └ --- webpack.config.js
+        ├--- package.json
+        ├--- package-lock.json
+        ├--- node-modules.json
+        ├--- public
+        |      ├--- index.html  
+        |      └--- bundle.html  [빌드 결과]
+        ├---  src
+        |      ├--- index.js
+        |      └--- App.js
+        └--- webpack.config.js
     <pre>
 3. scripts
 ```json
