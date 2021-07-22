@@ -9,7 +9,7 @@ $ npm i -D webpack webpack-cli express
 
 2. 프로젝트 디렉토리
 <pre>
-  /ex04
+  /ex01
     | --- package.json
     | --- package-lock.json
     | --- node-modules.json
@@ -26,7 +26,7 @@ $ npm i -D webpack webpack-cli express
 ```bash
 $ npx webpack ./src/index.js
 ```
-=> ./dist/main.js 로 번들링 됨
+=> ./dist/main.js 로 번들링 됨 (Default)
 
 ```bash
 $ npx webpack ./src/index.js -o ./public
