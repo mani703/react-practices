@@ -9,7 +9,7 @@ $ npm i -D webpack webpack-cli express
 
 2. 프로젝트 디렉토리
     <pre>
-    /ex02
+    /ex01
       ├ --- package.json
       ├ --- package-lock.json
       ├ --- node-modules.json

@@ -1,4 +1,4 @@
-  import content from './hello.txt';
+import content from './hello.txt';
 
 const App = function(){
     const app = document.createElement('h1');
