@@ -1,5 +1,5 @@
 {
-  "name": "ex04",
+  "name": "ex05",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,6 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.2.0",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
     "webpack": "^5.45.1",
     "webpack-cli": "^4.7.2",

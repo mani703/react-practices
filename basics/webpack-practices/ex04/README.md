@@ -1,21 +1,24 @@
-## webpack-practice: ex03
+## webpack-practice: ex04
 1. 프로젝트 생성
 ```bash
-$ mkdir ex03
-$ cd ex03
+$ mkdir ex04
+$ cd ex04
 $ npm init -y
-$ npm i -D webpack webpack-cli webpack-dev-server
+$ npm i -D webpack webpack-cli webpack-dev-server css-loader style-loader
 ```
 2. 프로젝트 디렉토리
     <pre>
-    /ex03
-      | --- package.json
+    /ex04
       | --- package-lock.json
+      | --- package.json
       | --- node-modules.json
       | --- public
               | --- index.html  
-              | --- main.js  
+              | --- bundle.js  
       | ---  src
+              | --- assets
+                       | --- Common.css
+                       | --- App.css
               | --- index.js
               | --- App.js
       | --- webpack.config.js [webpack 설정 파일]
@@ -30,6 +33,12 @@ module.exports = {
     output: {
         path: path.resolve('public'),
         filename: 'bundle.js'
+    },
+    module: {
+        rules: [{
+            test: /\.css$/i,
+            use: ['style-loader', 'css-loader']
+        }]
     },
     devServer: {
         contentBase: path.resolve('public'),

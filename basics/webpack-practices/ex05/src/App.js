@@ -1,4 +1,4 @@
-  import './assets/css/App.css';
+  import './assets/scss/App.scss';
 
 const App = function(){
     const app = document.createElement('h1');
