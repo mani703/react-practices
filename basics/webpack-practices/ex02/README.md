@@ -15,7 +15,7 @@ $ npm i -D webpack webpack-cli express
       ├ --- public
       |       ├ --- index.html  
       |       └ --- main.js  
-      | ---  src
+      ├ ---  src
       |       ├ --- index.js
       |       └ --- App.js
       ├ --- dev-server.mjs
