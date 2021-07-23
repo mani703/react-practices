@@ -15,10 +15,12 @@
         ├--- node-modules.json
         ├--- public
         |      ├--- index.html  
-        |      └--- bundle.html  [빌드 결과]
+        |      └--- bundle.js  [빌드 결과]
+        |
         ├---  src
         |      ├--- index.js
         |      └--- App.js
+        |
         └--- webpack.config.js
     <pre>
 3. scripts

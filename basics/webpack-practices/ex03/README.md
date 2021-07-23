@@ -15,9 +15,11 @@ $ npm i -D webpack webpack-cli webpack-dev-server
       ├--- public
       |      ├--- index.html  
       |      └--- main.js  
+      |
       ├---  src
       |      ├--- index.js
       |      └--- App.js
+      |
       └--- webpack.config.js [webpack 설정 파일]
     <pre>
 

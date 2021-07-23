@@ -15,6 +15,7 @@
         ├--- public
         |       ├--- index.html
         |       └--- index.js
+        |
         └--- dev-server
     <pre>
 3. scripts

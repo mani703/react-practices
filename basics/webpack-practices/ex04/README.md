@@ -15,12 +15,15 @@ $ npm i -D webpack webpack-cli webpack-dev-server css-loader style-loader
       ├--- public
       |      ├--- index.html  
       |      └--- bundle.js  
+      |
       ├---  src
       |      ├--- assets
       |      |        ├--- Common.css
       |      |        └--- App.css
+      |      |   
       |      ├--- index.js
       |      └--- App.js
+      |
       └--- webpack.config.js [webpack 설정 파일]
     <pre>
 

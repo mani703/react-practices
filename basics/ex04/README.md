@@ -29,10 +29,12 @@
         ├--- node-modules.json
         ├--- public
         |      ├--- index.html  
-        |      └--- main.html  
+        |      └--- main.js  
+        |
         ├---  src
         |      ├--- index.js
         |      └--- App.js
+        |
         └--- dev-server.mjs
     <pre>
 8. scripts

@@ -15,10 +15,12 @@ $ npm i -D webpack webpack-cli express
       ├--- node-modules.json
       ├--- public
       |      ├--- index.html  
-      |      └--- main.js  
+      |      └--- main.js 
+      | 
       ├---  src
       |      ├--- index.js
       |      └--- App.js
+      |
       └--- dev-server.mjs
     <pre>
 

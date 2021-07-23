@@ -16,6 +16,7 @@
         |       ├--- index.html
         |       ├--- index.js
         |       └--- App.js
+        |
         └--- dev-server
     <pre>
 3. scripts
