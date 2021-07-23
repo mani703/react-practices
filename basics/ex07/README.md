@@ -19,10 +19,11 @@
       |      └--- bundle.js  [빌드 결과]
       |
       ├---  src
-      |
-      |
+      |      ├--- App.css
+      |      ├--- App.js
+      |      ├--- index.css
       |      ├--- index.js
-      |      └--- App.js
+      |      └--- logo.svg
       |
       ├--- babel.config.json 
       └--- webpack.config.js

@@ -38,6 +38,5 @@
 5. 모든 변환 적용
 
    ```bash
-   $ npm i -D @babel/plugin-transform-for-of
    $ npx babel src/ex01.js -o dist/ex01.all.js --plugins @babel/plugin-transform-block-scoping --plugins @babel/plugin-transform-parameters --plugins @babel/plugin-transform-template-literals --plugins @babel/plugin-transform-for-of
    ```
