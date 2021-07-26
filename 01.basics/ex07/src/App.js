@@ -1,12 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import styles from './App.css';
 
-const App = function() {
+function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className={styles.App}>
+      <header className={styles['App-header']}>
+        <img src={logo} className={styles['App-logo']} alt="logo" />
         <p>
           React 1 Week 과제 입니다.
         </p>
