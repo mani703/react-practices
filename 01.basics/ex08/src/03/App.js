@@ -17,7 +17,7 @@ export default function() {
     createElement(
         Fragment,
         null,
-        createElement(Header, {name:'Application03', height:10}, null),
+        createElement(Header, {name:'App03', height:10}, null),
         createElement(Content, null, null)
     );
 */
