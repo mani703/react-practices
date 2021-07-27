@@ -1,10 +1,12 @@
-import React, { createElement } from 'react';
+import React, { Component } from 'react';
+import FoodList from './FoodList';
 
-export default function() {
-   
-    return (
-        <div>
-            
-        </div>    
-    );
+export default class extends Component() {
+    render() {
+        return (
+            <div id='App'>
+                <FoodList />
+            </div>
+        );
+    }
 }
