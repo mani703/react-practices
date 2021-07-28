@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import CardList from './CardList';
 import cards from './data.json';
 
