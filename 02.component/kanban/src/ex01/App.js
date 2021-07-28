@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import FoodList from './FoodList';
 
 export default class extends Component {
     render() {
         return (
             <div id='App'>
-                <FoodList />
+                <h1>Kanban Board</h1>
             </div>
         );
     }
