@@ -8,7 +8,8 @@ module.exports = (env) => {
         entry: entry,
         output: {
             path: path.resolve('public'),
-            filename: 'bundle.js'
+            filename: 'bundle.js',
+            assetModuleFilename: 'assets/images/[hash][ext]'
         },
         module: {
             rules: [{
@@ -16,24 +17,20 @@ module.exports = (env) => {
                 exclude: /node-modules/,
                 loader: 'babel-loader'
             }, {
-                test: /\.css$/i,
-                use: [
-                    'style-loader',
-                    { loader: 'css-loader', options: { modules: true } }
-                ]
-            }, {
-                test: /\.s[ac]ss$/i,
+                test: /\.(sa|sc|c)ss$/i,
                 use: [
                     'style-loader', 
-                    { loader: 'css-loader', options: { modules: true } }, 
-                    'sass-loader']
+                    { 
+                        loader: 'css-loader',
+                        options: {
+                            modules: true
+                        }
+                    }, 
+                    'sass-loader'
+                ]
             }, {
-                test: /\.(svg|jpe?g|gif|png|tiff?|bmp|ico|)$/i,
-                loader: 'file-loader',
-                options: {
-                    outputPath: '/assets/images',
-                    name: '[name].[ext]'
-                }
+                test: /\.(png|gif|ipe?g|svg|ico|tiff?|bmp)$/i,
+                type: 'asset/resource'
             }]
         },
         devtool: "eval-source-map",

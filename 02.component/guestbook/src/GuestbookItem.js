@@ -6,7 +6,7 @@ export default function GuestbookItem({ name, message ,regDate }) {
             <strong>{ name }</strong>
             <p>
                 { message && message.split('\n').map((line, index) => index > 0 ? 
-                    <Fragment>
+                    <Fragment key={ line }>
                         <br/>
                         { line }
                     </Fragment> : line) }
