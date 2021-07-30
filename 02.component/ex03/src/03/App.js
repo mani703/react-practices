@@ -2,13 +2,18 @@ import React, {Fragment} from 'react';
 
 export default function App() {
 
-    const onChangeMessageInput = function(event) {
-        console.log(event.target.name, ':', event.target.value);
+    const onChangeMessageInput = function(e) {
+        console.log(e.target.name, ':', e.target.value);
     }
 
-    const onAddFormSubmit = function(event) {
-        event.preventDefault();
-        console.log(event.target.name, ':', 'Ajax로 등록할 겁니다.');
+    const onAddFormSubmit = function(e) {
+        e.preventDefault();
+        console.log(
+            e.target.name, 
+            ':', 
+            e.target.message.value, 
+            ":", 
+            "Ajax 방식의 등록작업을 해야한다.");
     }
 
     return (
@@ -19,15 +24,15 @@ export default function App() {
                 Native 이벤트 객체와 사용하는 방식이 같다(인테페이스 동일)
             </p>
             <form
-                name='addForm'
+                name='AddForm'
                 method='post'
                 action='/do/not/go'
-                >
+                onSubmit={ onAddFormSubmit }>
                 <input
                     type='text'
                     name='message'
                     placeholder='메세지를 입력 하세요'
-                    />
+                    onChange={ onChangeMessageInput }/>
                 <br/>
                 <br/>
                 <input
