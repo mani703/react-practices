@@ -1,11 +1,11 @@
 import React from 'react';
 import GuestbookItem from './GuestbookItem'
-import guests from './data.json';
-//import styles from '../public/styles.css';
+import guests from './assets/json/data.json';
+import styles from './assets/scss/GuestbookList.scss';
 
 export default function GuestbookList() {
     return (
-        <ul className="Guestbook__List">
+        <ul className={ styles.Guestbook__List }>
             { guests.map(guest => <GuestbookItem 
                                         key={ guest.no } 
                                         name={ guest.name } 
