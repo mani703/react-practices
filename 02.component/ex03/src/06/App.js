@@ -2,8 +2,6 @@ import React, {Component, useRef} from 'react';
 import './assets/scss/App.scss';
 
 export default class App extends Component {
-
-
     render() {
         return (
             <div
