@@ -2,8 +2,18 @@ import React, { useState } from 'react';
 import './assets/Form.css';
 
 export default function Form() {
+    function onSubmit(e){
+        e.preventDefault();
+        console.log(e.target.email.value, ":", e.target.password.value);
+    }
+
     return (
-        <form id="loginForm" name="loginForm" method="post" action="/do/not/post">
+        <form 
+            id="loginForm" 
+            name="loginForm" 
+            method="post" 
+            action="/do/not/post"
+            onSubmit={ onSubmit }>
             <label htmlFor="email">이메일</label>
             <input 
                 id="email" 
