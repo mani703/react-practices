@@ -3,7 +3,7 @@ import React, { useState }from 'react';
 export default function({ begin, step }) {
     const [value, setValue] = useState(begin);
 
-    const onClickButton = function () {
+    const onClickButton = function() {
         setValue(value + step);
     }
 
