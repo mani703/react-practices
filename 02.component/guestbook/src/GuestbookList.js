@@ -1,17 +1,21 @@
 import React from 'react';
 import GuestbookItem from './GuestbookItem'
-import guests from './assets/json/data.json';
 import styles from './assets/scss/GuestbookList.scss';
+import PropTypes from 'prop-types';
 
-export default function GuestbookList() {
+export default function GuestbookList({ messages }) {
     return (
         <ul className={ styles.Guestbook__List }>
-            { guests.map(guest => <GuestbookItem 
-                                        key={ guest.no } 
-                                        name={ guest.name } 
-                                        message={ guest.message }
-                                        regDate={ guest.regDate }
+            { messages.map(message => <GuestbookItem 
+                                        key={ `guestbook_message_${message.no}` } 
+                                        no={ message.no }
+                                        name={ message.name } 
+                                        message={ message.message }
                                         />) }
         </ul>
     );
+}
+
+GuestbookList.propTypes = {
+    messages: PropTypes.arrayOf(PropTypes.shape(GuestbookItem.propTypes))
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import Email from './Email';
 import PropTypes from 'prop-types';
 
-export default function Emaillist({ keyword, emails }) {
+export default function Emaillist({ emails, keyword }) {
     console.log('rendering.... Emaillist');
     return (
         <ul className={ 'Emaillist' }>
