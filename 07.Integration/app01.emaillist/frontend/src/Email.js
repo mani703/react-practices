@@ -5,7 +5,7 @@ export default function Email({ no, firstName, lastName, email }) {
     return (
         <li>
             { `${firstName} ${lastName}` }
-            <br/>
+            <br/><br/>
             { email }
         </li>
     )
