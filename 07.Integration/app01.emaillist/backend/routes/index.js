@@ -4,8 +4,6 @@ const auth = require('./auth');
 const applicationRouter = {
     setup: async function(application){
 
-        const site = await models.Site.findOne();
-
         application
         .all('*', function(req, res, next) {
             res.locals.req = req;

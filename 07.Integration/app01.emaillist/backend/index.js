@@ -18,7 +18,7 @@
     const application = express()
         // 4-1. Session Environment
         .use(session({ 
-            secret: precess.env.SESSION_SECRET,
+            secret: process.env.SESSION_SECRET,
             resave: false,
             saveUninitialized: false  
         }))
