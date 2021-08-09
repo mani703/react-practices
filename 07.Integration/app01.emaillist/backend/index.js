@@ -5,36 +5,42 @@
     const path = require('path');
     const dotenv = require('dotenv');
 
-    // 1. Environment Variables
+    // 1. Startup Arguments
+    const argv = require('minimist')(process.argv.slice(2));
+
+    // 2. Environment Variables
     dotenv.config({path: path.join(__dirname, 'app.config.env')})
 
-    // 2. Application Routers
+    // 3. Process Title(name)
+    process.title = argv.name;
+
+    // 4. Application Routers
     const { applicationRouter } = require('./routes');
 
-    // 3. Logger
+    // 5. Logger
     const logger = require('./logging');
 
-    // 4. Application Setup
+    // 6. Application Setup
     const application = express()
-        // 4-1. Session Environment
+        // 6-1. Session Environment
         .use(session({ 
             secret: process.env.SESSION_SECRET,
             resave: false,
             saveUninitialized: false  
         }))
-        // 4-2. Body Parsers
+        // 6-2. Body Parsers
         .use(express.json())
         .use(express.urlencoded({extended: true}))
-        // 4-3. Static
+        // 6-3. Static
         .use(express.static(path.join(__dirname, process.env.STATIC_RESOURCES_DIRECTORY)))
-        // 4-4. View Engine Setup
+        // 6-4. View Engine Setup
         .set('views', path.join(__dirname, 'views'))
         .set('view engine', 'ejs');
 
-    // 5. Application Router Setup
+    // 7. Application Router Setup
     applicationRouter.setup(application);
 
-    // 6. Server Startup
+    // 8. Server Startup
     http.createServer(application)
         .on('listening', function(){
             logger.info('Listening on port ' + process.env.PORT );
