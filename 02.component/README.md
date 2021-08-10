@@ -5,3 +5,4 @@
 ### ex03: React Event                                     - Kanban Board #3, - Kanban Board #4(Props Type)
 ### ex04: State 
 ### ex05: Component Lifecycle
+### ex06: Immutability(불변성) of Component`s State
