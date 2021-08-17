@@ -61,5 +61,4 @@ emails.push({});
             5) $merge
             6) apply
 
-### How IV
 

@@ -1,0 +1,14 @@
+:global(.gallery) { 
+    margin:20px auto;	
+    width:520px; 
+
+    h1	{
+        color:#5c5c5c;
+        padding-left: 40px;
+        height:40px;
+        float: left;
+        background: url('../images/gallery.png') 0 0 no-repeat;
+        background-size:35px;
+        margin-bottom:10px;
+    }
+}
