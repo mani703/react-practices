@@ -1,27 +1,19 @@
 import React, { Fragment } from 'react';
-import { NavLink } from 'react-router-dom';
+import Footer from '../layout/Footer';
 import Header from '../layout/Header';
+import Navigation from '../layout/Navigation';
+import styles from '../assets/scss/component/Main.scss';
 
 export default function Main() {
     return (
         <Fragment>
             <div>
                 <Header/>
-
-                <div id='content'>
+                <div className={styles.Main}>
                     <h2>Main</h2>
                 </div>
-
-                <div id='navigation'>
-                    <ul>
-                        <li><NavLink to={'/guestbook'}>[Guestbook]</NavLink></li>
-                        <li><NavLink to={'/gallery'}>[Gallery]</NavLink></li>
-                    </ul>
-                </div>
-
-                <div id='footer'>
-                    <p>(c)opyright 2021</p>
-                </div>
+                <Navigation/>
+                <Footer/>
             </div>
         </Fragment>
     );
